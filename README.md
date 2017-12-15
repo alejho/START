@@ -22,6 +22,7 @@ You also must download and install these libraries in order to get the keyboard 
 <li><a href="https://github.com/olikraus/U8glib_Arduino">U8glib</a>
 </ul>
 
-<b>Then open and upload the runSTART example!</b>
+<b>Then open and upload the runSTART example!</b><br>
+(edit the file network.h for network settings)
 
 See the <a href="https://www.hackster.io/alejho/start-a-standalone-arduino-terminal-dc4980">project page on hackster.io</a> for wirings and usage examples!
