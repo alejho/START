@@ -10,7 +10,7 @@
 </ul>
 
 <b>START</b> is able to execute a small <b>set of builtin commands and even to connect to a real telnet server</b> and execute real shell commands remotely!</br></br>
-<img src="https://hackster.imgix.net/uploads/attachments/392869/selezione_011_L7CjSkQvXy.png?auto=compress%2Cformat&w=680&h=510&fit=max" alt="START" style="width:200px;height:300px;">
+<img src="https://hackster.imgix.net/uploads/attachments/392844/start_cover_kBIVjKqzPh.png?auto=compress%2Cformat&w=900&h=675&fit=min" alt="START" style="width:200px;height:300px;">
 
 
 <h2>Getting STARTed:</h2>
@@ -22,6 +22,7 @@ You also must download and install these libraries in order to get the keyboard 
 <li><a href="https://github.com/olikraus/U8glib_Arduino">U8glib</a>
 </ul>
 
-<b>Then open and upload the runSTART example!</b>
+<b>Then open and upload the runSTART example!</b><br>
+(edit the file network.h for network settings)
 
 See the <a href="https://www.hackster.io/alejho/start-a-standalone-arduino-terminal-dc4980">project page on hackster.io</a> for wirings and usage examples!
