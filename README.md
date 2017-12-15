@@ -10,7 +10,7 @@
 </ul>
 
 <b>START</b> is able to execute a small <b>set of builtin commands and even to connect to a real telnet server</b> and execute real shell commands remotely!</br></br>
-<img src="https://hackster.imgix.net/uploads/attachments/392869/selezione_011_L7CjSkQvXy.png?auto=compress%2Cformat&w=680&h=510&fit=max" alt="START" style="width:200px;height:300px;">
+<img src="https://hackster.imgix.net/uploads/attachments/392844/start_cover_kBIVjKqzPh.png?auto=compress%2Cformat&w=900&h=675&fit=min" alt="START" style="width:200px;height:300px;">
 
 
 <h2>Getting STARTed:</h2>
