@@ -234,3 +234,42 @@ bool telnet(){
 	return true;	
 }
 
+bool serialTerminal(){
+	
+	START::println("serial terminal begin");
+	while(strcmp(START::userInputBuffer, "exit") != 0){
+		
+		//be sure userInputBuffer is empty
+		memset(START::userInputBuffer, 0, MAX_INPUT_LENGTH);
+		//draw prompt
+		START::ln();
+		START::print(">");
+		
+		//get command to send
+		if(START::getUserInput()){
+			if (strcmp(START::userInputBuffer, "exit") == 0) continue;
+			START::ln();
+			Serial.println(START::userInputBuffer);	
+			//wait for a response
+			bool l_bListen = true;
+			char rc='\0';
+			while (l_bListen){
+				if(Serial.available() > 0){
+					rc = Serial.read();
+					if (rc != '\r' && rc != '\n' && rc != BACKSPACE_KEY){
+						START::print(rc);
+					}
+					else if(rc == '\r' || rc == '\n'){
+						l_bListen = false;
+					}
+				}
+			}
+		}	
+		else{
+			START::print("bad input!");
+			return false;
+		}
+	}
+	START::println("serial terminal end");
+}
+

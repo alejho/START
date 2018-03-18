@@ -20,6 +20,7 @@ bool getPinStatus();
 bool getPinMode();
 bool helloWorld();
 bool telnet();
+bool serialTerminal();
 
 
 const sysPrograms_t systemProgams[] PROGMEM = {
@@ -31,6 +32,7 @@ const sysPrograms_t systemProgams[] PROGMEM = {
     {"dioR", &getPinStatus},
     //{"hello", &helloWorld},
     {"telnet", &telnet},
+    {"st", &serialTerminal},
     
     {NULL, NULL}
 };

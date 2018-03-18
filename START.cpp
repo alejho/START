@@ -15,6 +15,7 @@ START::START(){
 	START::cursorY = 0;
 	memset(START::screen, 0, sizeof(START::screen[0][0]) * SCREEN_ROWS * SCREEN_COLS);
 	START::keyboard.begin(KEYBOARD_DATA_PIN, KEYBOARD_IRQ_PIN);
+
 }
 
 /*void START::print(const __FlashStringHelper* msg){
@@ -118,6 +119,7 @@ bool START::getUserInput(){
 		START::ln();
 	}
 	START::print(">");
+	
 	
 	char rc='\0';
 	uint8_t i = 0;       

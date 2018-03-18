@@ -8,10 +8,11 @@
 #include <PS2Keyboard.h>
 #include <Ethernet.h>
 
-#define DEBUG 
+//#define DEBUG 
 //#define UOUT_SERIAL 
 //#define UIN_SERIAL  
 #define ARRAYSIZE(arr) (sizeof(arr) / sizeof(arr[0]))
+
 
 const uint8_t MAX_INPUT_LENGTH = 32;
 const uint8_t MAX_ARG_LENGTH = 16;
